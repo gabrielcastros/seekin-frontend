@@ -1,6 +1,6 @@
 const input = document.getElementById('track1');
 const submitBtn = document.getElementById('submit-btn')
-const urlBase = 'https://seekin-backend-e02d70f045ca.herokuapp.com/'
+const urlBase = 'https://seekin-backend-e02d70f045ca.herokuapp.com'
 
 function resolveTrack(trackUrl) {
     return fetch(`${urlBase}/resolveTrack?url=${trackUrl}`)
