@@ -3,8 +3,8 @@ const submitBtn = document.getElementById('submit-btn');
 const playlistList = document.querySelector('.list-group');
 const addTrackBtn = document.getElementById('add-track-btn');
 const inputWrapper = document.querySelector('.input-wrapper');
-// const urlBase = 'https://seekin-backend-e02d70f045ca.herokuapp.com'
-const urlBase = 'http://localhost:3000';
+const urlBase = 'https://seekin-backend-e02d70f045ca.herokuapp.com'
+//const urlBase = 'http://localhost:3000';
 
 function resolveTrack(trackUrl) {
     return fetch(`${urlBase}/resolveTrack?url=${trackUrl}`)
@@ -40,7 +40,7 @@ function fetchPlaylists(trackUrl) {
         .then(playlists => {
             addNewPlaylist(playlists);
             input.value = '';
-            input.placeholder = 'Insira a URL de outra track (opcional)';
+            input.placeholder = 'Insert another SoundCloud track URL (optional)';
         })
         .catch(error => {
             console.error('Erro ao buscar playlists:', error);
