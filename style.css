@@ -1,0 +1,37 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Thinner Scrollbar for Webkit Browsers */
+::-webkit-scrollbar {
+    width: 6px;  /* width of the vertical scrollbar */
+    height: 6px; /* height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Light background */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0e4291;  /* Gray handle */
+    border-radius: 10px;  /* Rounded corners */
+    opacity: 70%;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;  /* Darker handle when hovered */
+}
+
+.overflow-auto {
+    box-sizing: none; /* Prevent layout shift */
+    overflow: auto; /* Prevent content squish */
+}
+
+button:active {
+    transform: scale(0.98);
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    transition: all 200ms ease;
+}
